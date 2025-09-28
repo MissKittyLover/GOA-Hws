@@ -219,7 +219,7 @@ pendown()
 right(90)
 forward(50)
 
-#Door knobs?
+#Door knobs in ⋆˙⟡gold⋆˙⟡? 
 
 penup()
 goto(100, 26)
