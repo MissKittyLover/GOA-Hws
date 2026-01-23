@@ -1,0 +1,47 @@
+<!-- 2) კომენტარების სახით ახსენით თუ რაში ვიყენებთ form, input, label, select, option, video, audio tag - ებს, კარგად გაიაზრეთ ისინი და მოიყვანეთ მაგალითებიც
+
+Formები გამოიყენება მომხმარებლისგან ინფორმაციის შესაგროვლებლად (Registration forms, surveys, feedback forms, etc.).
+Input tag is used to let the user enter data (text, email, password, date, etc.).
+Label tag is used to define labels for input elements which improves accessibility.
+Select tag is used to create a drop-down list, and option tags define the available options within the given list.
+Video tag is used to embed video content on a webpage.
+Audio tag is used to embed audio content on a webpage.
+-->
+
+<!DOCTYPE html>
+<html lang = 'en'></html>
+<head>
+    <title>Examplary</title>
+    <form>
+        <h1><i><b>Examples...</b></i></h1>
+        <label for="Text">Sample Text Input:</label>
+        <input type="text" id="Text" name="Text"><br><br>
+        <label for="Email">Sample Email Input:</label>
+        <input type="email" id="Email" name="Email"><br><br>
+        <label for="Password">Sample Password Input:</label>
+        <input type="Password" id="Password" name="Password"><br><br>
+        <label for="Month">Sample Month Input:</label>
+        <input type="month" id="Month" name="Month"><br><br>
+        <label for="Options">Sample Drop-down Menu:</label>
+        <select id="Options" name="Options">
+            <option value="Optiona">Optiona</option>
+            <option value="Optioni">Optioni</option>
+            <option value="Optionka">Optionka</option>
+        </select><br><br>
+        <label for="SampleVideo">Sample Video:</label><br>
+        <video id="SampleVideo" width="320" height="240" controls>
+            <source src="c:\Users\mylaptop.ge\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Recordings\20260122-1734-47.2011607.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video><br><br>
+        <label for="SampleAudio">Sample Audio:</label><br>
+        <audio id="SampleAudio" controls>
+            <source src="c:\Users\mylaptop.ge\Downloads\Serebro - mimimi (sped up).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio><br><br>
+        <input type="Submit" value="Submit Examples">
+    </form>
+</head>
+
+
+
+<!-- 4) შექმენით მსგავსი ფორმები, drop down menu, ივარჯიშეთ video, audio tag - ებზე -->

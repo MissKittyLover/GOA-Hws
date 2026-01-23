@@ -1,0 +1,24 @@
+<!-- 4) შექმენით facebook - ის website სადაც გექნებათ მოცემული registration form, საიდანაც მომხმარებელს მოთხოვთ თავისი ინფორმაციის შემოტანას,
+უნდა გქონდეთ ლინკი Go To About facebook Page რომელზე დაჭერისას გადახვალთ facebook - ის შესახებ გვერდზე, აგრეთვე უნდა გქონდეთ contact გვერდიც 
+სადაც იქნება გამოტანილი contact - გვერდისთვის დამახასიათებელი ინფორმაცია, თქვენი საიტი გაალამაზეთ ფოტოებით -->
+<body>
+    <h1>Register on Facebook</h1>
+    <form action="/submit_registration" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <label for="Birthday">Birth Month:</label>
+        <input type="month" id="birthday" name="birthday"><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+    
+    <br>
+    <a href="About_facebook.html">Go To About Facebook Page</a><br>
+    <a href="Contact.html">Contact Page</a>
