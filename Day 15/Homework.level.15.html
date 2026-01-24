@@ -1,47 +1,50 @@
 <!-- 2) კომენტარების სახით ახსენით თუ რაში ვიყენებთ form, input, label, select, option, video, audio tag - ებს, კარგად გაიაზრეთ ისინი და მოიყვანეთ მაგალითებიც
 
-Formები გამოიყენება მომხმარებლისგან ინფორმაციის შესაგროვლებლად (Registration forms, surveys, feedback forms, etc.).
-Input tag is used to let the user enter data (text, email, password, date, etc.).
-Label tag is used to define labels for input elements which improves accessibility.
-Select tag is used to create a drop-down list, and option tags define the available options within the given list.
-Video tag is used to embed video content on a webpage.
-Audio tag is used to embed audio content on a webpage.
--->
+formები გამოყენება ფორმების შესაქმნელად სადაც მომხმარებელს შეეძლება ინფორმაციის შეტანა ან გვერდთან ნტერაქცია (registration form, contact form, survey form, etc)
+input გამოყენება რომ მომხარებელს ინფორმაცია შემოვატანინოთ (text, password, email, checkbox, radio button, etc)
+labelს ვიყენებთ input tagის ასაღწერად და მომხმარებლისთვის უფრო მარტივი ხდება ფორმის შევსება
+select გამოიყენება იმისთვის რომ მომხმარებელმა აირჩიოს ერთი ან მეტი ვარიანტი რაღაც მოცემული სიიდან/ჩამოსაშლელი სიიდან
+option გამოიყენება რომ ვარიანტი შემოვიტანოთ რომელსაც მომხმარებელი აირჩევს.
+video tag გამოიყენება ვიდეოს ჩასატვირთად და საჩვენებლად ეკრანზე
+audio ефп კი გამოიყენება იმისათვის რომ ხმოვანი ჩანაწერი ავტვირთოთ და მოვასმენინოთ მომხმარებელს.
+
+
+4) შექმენით მსგავსი ფორმები, drop down menu, ივარჯიშეთ video, audio tag - ებზე -->
 
 <!DOCTYPE html>
-<html lang = 'en'></html>
+<html lang="en">
 <head>
-    <title>Examplary</title>
-    <form>
-        <h1><i><b>Examples...</b></i></h1>
-        <label for="Text">Sample Text Input:</label>
-        <input type="text" id="Text" name="Text"><br><br>
-        <label for="Email">Sample Email Input:</label>
-        <input type="email" id="Email" name="Email"><br><br>
-        <label for="Password">Sample Password Input:</label>
-        <input type="Password" id="Password" name="Password"><br><br>
-        <label for="Month">Sample Month Input:</label>
-        <input type="month" id="Month" name="Month"><br><br>
-        <label for="Options">Sample Drop-down Menu:</label>
-        <select id="Options" name="Options">
-            <option value="Optiona">Optiona</option>
-            <option value="Optioni">Optioni</option>
-            <option value="Optionka">Optionka</option>
-        </select><br><br>
-        <label for="SampleVideo">Sample Video:</label><br>
-        <video id="SampleVideo" width="320" height="240" controls>
-            <source src="c:\Users\mylaptop.ge\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Recordings\20260122-1734-47.2011607.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video><br><br>
-        <label for="SampleAudio">Sample Audio:</label><br>
-        <audio id="SampleAudio" controls>
-            <source src="c:\Users\mylaptop.ge\Downloads\Serebro - mimimi (sped up).mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio><br><br>
-        <input type="Submit" value="Submit Examples">
-    </form>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Homework Level 15</title>
 </head>
+<body> 
+    <h1><i>KITTY...</i></h1>
+    <form action="/submit" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
 
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
 
-
-<!-- 4) შექმენით მსგავსი ფორმები, drop down menu, ივარჯიშეთ video, audio tag - ებზე -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        <input type="submit" value="Register">
+    </form>
+    <h2><i>Sample Video:</i></h2>
+    <video width="320" height="240" controls loop id="myVideo">
+        <source src="c:\Users\mylaptop.ge\Videos\Screen Recordings\Screen Recording 2026-01-22 213511.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <h2><i>Sample Audio:</i></h2>
+    <audio controls>
+        <source src="c:\Users\mylaptop.ge\Downloads\Serebro - mimimi (sped up).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
