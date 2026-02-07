@@ -1,0 +1,6 @@
+name = 'Mariam'
+Surname = 'Ghlonti'
+Age = '16'
+Height = '~158cm'
+
+print("Good evening, I am " + name + " " + Surname  + ". I turned " + Age + " not too long ago. I think I stand at a decent height of " + Height + ".")
