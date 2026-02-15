@@ -1,0 +1,12 @@
+def camel_case(s):
+    splited = s.split(' ')
+    
+    result = []
+    
+    if s == '':
+        return s
+    
+    for i in range(len(splited)):
+        if(splited[i] != ''):
+            result.append(splited[i][0].upper() + splited[i][1:])
+    return ''.join(result)
