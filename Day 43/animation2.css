@@ -1,0 +1,23 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+body {height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #FADADD;}
+
+.CONTAINER {height: 100%;
+            position: relative;}
+
+.BALL {width:77px;
+    height: 77px;
+    background-color: #B76C79;
+    border-radius: 50%;
+
+    position: absolute;
+    
+    animation: MOVEright 3s linear infinite alternate;}
+
+@keyframes MOVEright { from {top: 0%;}
+                    to {top: 96%;}}

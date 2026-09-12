@@ -1,0 +1,215 @@
+/* CSS Reset: remove browser default margins, padding, and box-sizing differences.
+   We use this to make styles consistent across browsers and avoid unexpected spacing. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(180deg, #d6e5d0 0%, #c1d4b5 100%);
+    color: #223627;
+    line-height: 1.6;
+}
+
+.site-header {
+    background: rgba(161, 184, 146, 0.96);
+    padding: 24px 32px;
+    border-bottom: 4px solid #8fa87c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.brand h1 {
+    font-size: 2rem;
+    margin-bottom: 6px;
+}
+
+.brand p {
+    color: #374c37;
+}
+
+.main-nav {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.main-nav a {
+    color: #2f4535;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 999px;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+    background: #9cb48d;
+    color: #192613;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 16px rgba(77, 91, 70, 0.14);
+}
+
+main {
+    max-width: 1100px;
+    margin: 32px auto;
+    padding: 0 20px;
+}
+
+.page-section {
+    background: rgba(231, 239, 223, 0.96);
+    border: 1px solid rgba(129, 152, 104, 0.28);
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 26px;
+    box-shadow: 0 24px 48px rgba(71, 84, 61, 0.15);
+}
+
+.page-section h2 {
+    color: #365335;
+    margin-bottom: 14px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.movie-card {
+    background: rgba(209, 224, 200, 0.96);
+    padding: 18px;
+    border-radius: 16px;
+    border: 1px solid rgba(116, 137, 108, 0.4);
+}
+
+.movie-card h3 {
+    margin-bottom: 10px;
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.feature-card {
+    padding: 18px;
+    border-radius: 14px;
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    color: #243824;
+}
+
+.feature-1 { background: #bac8a3; }
+.feature-2 { background: #a9be96; }
+.feature-3 { background: #96b386; }
+.feature-4 { background: #82a674; }
+.feature-5 { background: #73976a; }
+
+.contact-form,
+.register-form {
+    display: grid;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.contact-form label,
+.register-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #2f5035;
+}
+
+.contact-form input,
+.contact-form textarea,
+.register-form input,
+.register-form select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(116, 137, 108, 0.5);
+    background: #e7eed9;
+    color: #243a28;
+}
+
+.contact-form button,
+.register-form button {
+    width: fit-content;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 999px;
+    background: #8ba47d;
+    color: #192613;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.contact-form button:hover,
+.register-form button:hover {
+    background: #a5ba95;
+    transform: translateY(-1px);
+}
+
+.form-row {
+    display: grid;
+    gap: 8px;
+}
+
+.sample-block {
+    margin: 16px 0;
+    padding: 20px;
+    border-radius: 14px;
+    color: #243a28;
+    font-weight: 600;
+}
+
+.block-a { background: #b7c498; }
+.block-b { background: #a8b78e; }
+.block-c { background: #97a77f; }
+.block-d { background: #83906f; }
+.block-e { background: #6f7f5f; }
+
+#container {
+    width: 300px;
+    height: 200px;
+    background-color: #d9e1c6;
+    padding: 20px;
+    border: 5px solid #8f9d7c;
+    margin: 30px auto;
+    border-radius: 16px;
+}
+
+#container p {
+    color: #3a5038;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 18px 0;
+    color: #30452e;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 720px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+    }
+}

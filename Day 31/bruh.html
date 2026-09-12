@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruh Movie Hub - Home</title>
+    <link rel="stylesheet" href="bruh.css">
+</head>
+<body>
+
+<!-- 1) შექმენით ფილმების ვებსაიტი,რომელსაც ექნება 4 გვერდი Home,contact, about us,registration page,
+გასტილეთ საიტი ყველანაირად,გამოიყენეთ box-model იც, ნორმალურად გასტილეთ, დრო გექნებათ შემდეგ css ის გაკვეთილამდე, 
+თუ საიტი უხარისხოდ იქნება გასტილული არ ჩავთვლი დავალებას და ჩემთან მოგიწევთ ვოისში გაკეთება, უხარისხოდ გაკეთებულში იგულისხმება,
+როცა 2 ხაზი კოდი გიწერიათ css ში და როცა გეზარებათ გაკეთება, 
+გააკეთეთ თუგინდათ მასე და იზარმაცეთ მაგრამ იცოდეთ რომ მასე არაფერი არ გამოგივათ ამ სფეროში <3
+2) ახსენით რა არის CSS Box Model და შექმენით თქვენი ნახაზი
+
+3) დაწერეთ როგორ მუშაობს padding და margin, ჩამოთვალეთ CSS Box Model-ის ყველა შრე. 
+ასევე CSS-ში დაწერეთ CSS reset-ის კოდი და ახსენით რისთვის ვიყენებთ
+
+4) შექმენით 5 div ბლოკი, გაუწერეთ სხვადასხვა კუთვნილებები, აუცილებლად მიანიჭეთ ყველას margin და padding, გატესტეთ სხვადასხვა ვარიანტები
+
+5) შექმენით div ელემენტი id="container". მას მიანიჭეთ width და height მნიშვნელობები, მაგალითად 300px და 200px, ასევე background-color.
+
+შემდეგ ამ ელემენტს გაუწერეთ შემდეგი თვისებები:
+- padding: 20px;
+- border: 5px solid black;
+- margin: 30px;
+
+დამატეთ კომენტარები კოდის თავზე ან შიგნით, სადაც განმარტავთ:
+- რა არის padding
+- რა არის border
+- რა არის margin
+- რა არის content
+
+ასევე მიუთითეთ, როგორ მუშაობს მთლიანობაში Box Model.
+
+6)აუცილებლად გადახედეთ რესურსებს და ჩანაწერს, ასევე გაიმეორეთ განვლილი მასალა -->
+    <header class="site-header">
+        <div class="brand">
+            <h1>Bruh Movie Hub</h1>
+            <p>Welcome to the home page of your movie website.</p>
+        </div>
+        <nav class="main-nav">
+            <a href="bruh.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="registration.html">Registration</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-section">
+            <h2>Home</h2>
+            <p>Discover featured movies, read about the site, and navigate to contact or registration pages.</p>
+            <div class="movie-grid">
+                <article class="movie-card">
+                    <h3>Action Blast</h3>
+                    <p>High-energy thrills with explosive scenes and nonstop excitement.</p>
+                </article>
+                <article class="movie-card">
+                    <h3>Romantic Skies</h3>
+                    <p>A tender story of love and discovery against a cinematic backdrop.</p>
+                </article>
+                <article class="movie-card">
+                    <h3>Mystery Manor</h3>
+                    <p>A suspense-filled journey through secrets and surprises.</p>
+                </article>
+                <article class="movie-card">
+                    <h3>Animated Adventure</h3>
+                    <p>Colorful characters and family-friendly fun for all ages.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <h2>Site Features</h2>
+            <div class="about-cards">
+                <div class="feature-card feature-1">Easy navigation</div>
+                <div class="feature-card feature-2">Clean layout</div>
+                <div class="feature-card feature-3">Responsive design</div>
+                <div class="feature-card feature-4">External CSS styling</div>
+                <div class="feature-card feature-5">Box model spacing</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Bruh Movie Hub &copy; 2026</p>
+    </footer>
+</body>
+</html>

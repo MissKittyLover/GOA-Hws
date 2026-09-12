@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes & Loves</title>
+
+<style>
+
+    body {background-color: #D8C2C8;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #722f37;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;}
+
+    h1 {color: #722f37;
+        font-size: 33px;
+        text-align: center;
+        margin-top: 20px;
+        font-family: cursive;}
+
+    nav {background-color: #722f37;
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+        z-index: 100;}
+
+    nav ul {list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;}
+
+    nav li a {display: block;
+        color: #D8C2C8;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-weight: bold;}
+
+    nav li a:hover {background-color: #D8C2C8;
+        color: #722f37;}
+
+    .container {max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+
+    .likes-container {display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 30px;
+        justify-content: center;}
+
+    .like-item {background-color: rgba(114, 47, 55, 0.1);
+        padding: 25px;
+        border-radius: 12px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        flex: 1;
+        min-width: 300px;
+        max-width: 400px;
+        position: relative;
+        overflow: hidden;}
+
+    .like-item:hover {transform: translateY(-8px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);}
+
+    .like-item.left {align-self: flex-start;}
+
+    .like-item.right {align-self: flex-end;
+        margin-top: 50px;}
+
+    .like-content {display: flex;
+        align-items: center;
+        gap: 20px;}
+
+    .like-text {flex: 1;}
+
+    .like-image {width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #722f37;
+        flex-shrink: 0;}
+
+    .like-title {font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 8px;
+        color: #722f37;}
+
+    .like-description {font-size: 16px;
+        line-height: 1.5;}
+
+    .god-item {min-width: 500px;
+        max-width: 600px;
+        flex: none;
+        margin: 0 auto 30px;}
+
+</style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="About.me.html">About Me</a></li>
+            <li><a href="Goals&FuturePlans.html">Goals & Future Plans</a></li>
+            <li><a href="Likes&Loves.html">Likes & Loves</a></li>
+            <li><a href="MyValues.html">My Values</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h1>Likes & Loves</h1>
+        
+        <div class="likes-container">
+            <div class="like-item god-item">
+                <div class="like-content">
+                    <div class="like-text">
+                        <div class="like-title">God</div>
+                        <div class="like-description">When I think about what I love, the first thing that pops up in my little heart is God.
+                            So, that is why I am putting Him first in my "Likes & Loves" and not only here...</div>
+                    </div>
+                    <img src="https://via.placeholder.com/120x120/722f37/D8C2C8?text=God" alt="Faith in God" class="like-image">
+                </div>
+            </div>
+            
+            <div class="like-item left">
+                <div class="like-content">
+                    <div class="like-text">
+                        <div class="like-title">Drawing & Art</div>
+                        <div class="like-description">Creating beautiful artwork and expressing my creativity through sketches, paintings, and digital art is one of my greatest passions.</div>
+                    </div>
+                    <img src="https://via.placeholder.com/120x120/722f37/D8C2C8?text=Drawing" alt="My Drawing" class="like-image">
+                </div>
+            </div>
+            
+            <div class="like-item right">
+                <div class="like-content">
+                    <img src="https://via.placeholder.com/120x120/722f37/D8C2C8?text=Coding" alt="Coding" class="like-image">
+                    <div class="like-text">
+                        <div class="like-title">Coding</div>
+                        <div class="like-description">I absolutely love bringing ideas to life through code and building amazing web applications.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="like-item left">
+                <div class="like-content">
+                    <div class="like-text">
+                        <div class="like-title">Design</div>
+                        <div class="like-description">Creating beautiful and intuitive user interfaces that are both functional and aesthetically pleasing.</div>
+                    </div>
+                    <img src="https://via.placeholder.com/120x120/722f37/D8C2C8?text=Design" alt="Design Work" class="like-image">
+                </div>
+            </div>
+            
+            <div class="like-item right">
+                <div class="like-content">
+                    <img src="https://via.placeholder.com/120x120/722f37/D8C2C8?text=Coffee" alt="Coffee" class="like-image">
+                    <div class="like-text">
+                        <div class="like-title">Coffee</div>
+                        <div class="like-description">A perfect cup of coffee makes everything better and fuels my creative sessions.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="like-item left">
+                <div class="like-content">
+                    <div class="like-text">
+                        <div class="like-title">Nature</div>
+                        <div class="like-description">Spending time in nature rejuvenates my soul and inspires my artistic creations.</div>
+                    </div>
+                    <img src="https://via.placeholder.com/120x120/722f37/D8C2C8?text=Nature" alt="Nature" class="like-image">
+                </div>
+            </div>
+            
+            <div class="like-item right">
+                <div class="like-content">
+                    <img src="https://via.placeholder.com/120x120/722f37/D8C2C8?text=Music" alt="Music" class="like-image">
+                    <div class="like-text">
+                        <div class="like-title">Music</div>
+                        <div class="like-description">Music is the soundtrack to my life and creativity, always keeping me inspired.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

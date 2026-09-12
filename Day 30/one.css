@@ -1,0 +1,57 @@
+/* General Page Styling */
+body {align-items: center;
+    justify-content: center;
+    background-color: #1a1a24; /* Dark background from the image */
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 30px;}
+.five {background-color: #1a1a24; /* Dark background from the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+/* Container width */
+.form-container {width: 100%;
+    max-width: 400px;
+    padding: 20px;}
+
+/* Input and Textarea Styling */
+input, textarea {width: 100%;
+    background-color: #1e1e2a; /* Slightly lighter dark for inputs */
+    border: 2px solid #b36b6b; /* Terracotta border color */
+    border-radius: 4px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    outline: none;}
+
+/* Placeholder text color */
+::placeholder {color: #8a8a9a;
+    opacity: 1;}
+
+/* Remove default resize styling but keep the handle from the image */
+textarea {resize: vertical;}
+
+/* Submit Button Styling */
+button {width: 100%;
+    background-color: #b36b6b; /* Match the border color */
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;}
+
+/* Simple hover effect for the button */
+button:hover {background-color: #a05a5a;}

@@ -1,0 +1,152 @@
+/* Cutsie Core Design CSS */
+
+/* Body styling for a soft, cute background */
+body {background-color: #FADADD;
+     font-family: 'Comic Sans MS', cursive, sans-serif;
+     color: #722F37;
+     margin: 0;
+     padding: 0;
+     line-height: 1.6;}
+
+/* Header styling */
+header {background-color: #D8B0C2;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 5px solid #C987A0;
+        box-shadow: 0 4px 8px rgba(198, 143, 171, 0.25);}
+
+/* Navigation */
+nav {margin-top: 15px;}
+
+nav a {color: #FADADD;
+         text-decoration: none;
+         margin: 0 15px;
+         font-weight: bold;
+         padding: 5px 10px;
+         border-radius: 10px;
+         transition: background-color 0.3s;}
+
+nav a:hover {background-color: #A35C68;}
+
+/* Main content */
+main {max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;}
+
+/* H1 styling - cute and prominent */
+h1 {color: #722F37;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 2px 2px 4px #D8C2C8;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #CC8899;
+    padding-bottom: 10px;}
+
+/* H2 styling */
+h2 {color: #A35C68;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;}
+
+/* H3 styling */
+h3 {color: #722F37;
+    font-size: 1.5em;
+    margin-bottom: 10px;}
+
+/* P styling - soft and readable */
+p {color: #A35C68;
+   font-size: 1.2em;
+   margin: 15px 0;
+   padding: 10px;
+   background-color: #F7D5E0;
+   border-radius: 10px;
+   box-shadow: 1px 1px 3px rgba(198, 143, 171, 0.2);}
+
+/* Class for multiple elements - cute styling */
+.cute {background-color: #CC8899;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 20px 0;
+        box-shadow: 3px 3px 8px #A35C68;
+        transition: transform 0.2s;}
+
+.cute:hover {transform: scale(1.02);}
+
+/* Elements section */
+.elements {display: flex;
+           flex-wrap: wrap;
+           gap: 20px;
+           justify-content: space-around;}
+
+.elements .cute {flex: 1 1 300px;
+                 min-width: 250px;}
+
+/* Div with class - special styling as per task 6 */
+div.special {width: 80%;
+              max-width: 600px;
+              height: auto;
+              min-height: 200px;
+              background-color: #FDE4EC;
+              border: 3px solid #D69EB4;
+              border-radius: 20px;
+              margin: 30px auto;
+              padding: 30px;
+              box-shadow: 5px 5px 15px rgba(198, 143, 171, 0.25);
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              text-align: center;}
+
+/* Images */
+.nature-image {width: 100%;
+               max-width: 800px;
+               height: auto;
+               border-radius: 15px;
+               margin: 20px 0;
+               box-shadow: 0 4px 8px rgba(198, 143, 171, 0.35);}
+
+/* Gallery */
+.gallery {display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 15px;
+          margin: 20px 0;}
+
+.gallery-image {width: 100%;
+               height: 250px;
+               object-fit: cover;
+               border-radius: 10px;
+               box-shadow: 0 2px 4px rgba(198, 143, 171, 0.25);
+               transition: transform 0.3s;}
+
+.gallery-image:hover {transform: scale(1.05);}
+
+/* Footer */
+footer {background-color: #A35C68;
+        color: #FADADD;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        border-top: 5px solid #722F37;}
+
+footer p {background-color: transparent;
+          color: #FADADD;
+          margin: 10px 0;}
+
+/* Button styling (if needed) */
+button {background-color: #CC8899;
+        color: #FADADD;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px #A35C68;
+        transition: background-color 0.3s;}
+
+button:hover {background-color: #A35C68;}
+
+/* Responsive design */
+@media (max-width: 768px) {h1 {font-size: 2em;}
+                            .elements {flex-direction: column;}
+                            .gallery {grid-template-columns: 1fr;}}
